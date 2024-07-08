@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #013054;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container {
+    width: 400px;
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    transition: 0.6s ease-out;
+    margin-top: 20px;
+}
+
+.cari-box {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cari-box input {
+    color: #06283D;
+    width: calc(100% - 60px);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cari-box input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+.cari-box button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.cari-box button:hover {
+    color: #fff;
+    background: #06283D;
+}
+
+.cuaca-box {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cuaca-box img {
+    width: 60%;
+    margin-top: 10px;
+}
+
+.cuaca-box .temperature {
+    position: relative;
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 20px; 
+    margin-left: -16px;
+}
+
+.cuaca-box .temperature span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.cuaca-box .description {
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.cuaca-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; 
+}
+
+.cuaca-details .humidity, .cuaca-details .wind {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 100px;
+}
+
+.cuaca-details .humidity {
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.cuaca-details .wind {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.cuaca-details i {
+    color: #06283D;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.cuaca-details span {
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cuaca-details p {
+    color: #06283D;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tidak-ditemukan {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.tidak-ditemukan img {
+    width: 70%;
+}
+
+.tidak-ditemukan p {
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.cuaca-box, .cuaca-details {
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

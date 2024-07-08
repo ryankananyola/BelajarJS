@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Cek Cuaca</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>PERKIRAAN CUACA SAAT INI</h1>
+        <p>by Ryan K Ny</p>
+    </header>
+
+    <div class="container">
+        <div class="cari-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Masukkan Lokasi Anda">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="tidak-ditemukan">
+            <img src="image/kosong.png">
+            <p>Oops! Lokasi Tidak Ditemukan</p>
+        </div>
+
+        <div class="cuaca-box">
+            <img src="">
+            <p class="temperatur"></p>
+            <p class="deskripsi"></p>
+        </div>
+
+        <div class="cuaca-details">
+            <div class="kelembapan">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Kelembapan</p>
+                </div>
+            </div>
+            <div class="angin">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Kecepatan Angin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
