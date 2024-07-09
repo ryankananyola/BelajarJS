@@ -12,8 +12,24 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+header{
+    text-align: center;
+    margin-top: -130px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 36px;
+}
+
+header p{
+    margin: 0;
+    font-size: 18px;
+}
+
 canvas{
     border: 2px solid #fff;
+    position: relative;
 }
 
 .score-container{
@@ -21,6 +37,7 @@ canvas{
     justify-content: space-between;
     width: 420px;
     font-size: 18px;
+    margin-top: 60px;
 }
 
 #restart-btn{
@@ -37,11 +54,12 @@ canvas{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(29, 99, 76, 0.8);
+    background-color: rgba(5, 16, 12, 0.8);
     padding: 20px;
     color: #fff;
     flex-direction: column;
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
