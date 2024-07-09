@@ -16,7 +16,7 @@ let currentScoreELem = document.getElementById('current-score');
 let highScoreELem = document.getElementById('high-score');
 
 
-function intializedGame(){
+function initializeGame(){
 
     snake = [
         {
@@ -43,11 +43,11 @@ function intializedGame(){
     highScoreELem.textContent = highScore;
 }
 
-intializedGame();
+initializeGame();
 
 document.addEventListener('keydown', function(event){
     switch (event.key){
-        case 'ArrorUp':
+        case 'ArrowUp':
             if(dy === 0){
                 dx = 0;
                 dy = -GRID_SIZE;
@@ -60,13 +60,13 @@ document.addEventListener('keydown', function(event){
             }
             break;
         case 'ArrowLeft':
-            if(dy === 0){
+            if(dx === 0){
                 dx = -GRID_SIZE;
                 dy = 0;
             }
             break;
         case 'ArrowRight':
-            if(dy === 0){
+            if(dx === 0){
                 dx = GRID_SIZE;
                 dy = 0;
             }
@@ -120,7 +120,7 @@ function update(){
             localStorage.setItem('highScore', highScore);
             highScoreELem.textContent = highScore;
         }
-        gameOverScreen();
+        gameOver();
         return;
     }
 
@@ -205,13 +205,13 @@ function gameOver(){
 function gameWin(){
     gamePaused = true;
     alert("Selamat! Anda Menang");
-    intializedGame();
+    initializeGame();
 }
 
 restartBtn,addEventListener('click', function(){
     gameOverScreen.style.display = 'none';
     gamePaused = false;
-    intializedGame();
+    initializeGame();
     update();
 });
 
