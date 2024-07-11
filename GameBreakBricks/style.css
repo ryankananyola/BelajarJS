@@ -1,0 +1,32 @@
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c3ebbe;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #000000;
+    margin: 0;
+}
+
+.header p {
+    font-size: 20px;
+    color: #000000;
+    margin: 5px 0 0 0;
+}
+
+#game{
+    background-color: #ececbd;
+    border: 2px solid #333;
+    margin-top: 20px
+}
