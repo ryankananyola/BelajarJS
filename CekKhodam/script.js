@@ -1,13 +1,14 @@
 function cekKhodam(event){
     event.preventDefault();
-    let nama = $('search').val();
+    let nama = $('#search').val();
+    // alert("testing");
     if (nama === ''){
         alert('Masukkan nama terlebih dahulu!');
     } else {
         let status = [
             'isi',
-            'kosong',
-        ]
+            'kosong'
+        ];
         const randomStatus = Math.floor(Math.random() * status.length);
         if (randomStatus === 0){
             let khodam = [
@@ -27,11 +28,11 @@ function cekKhodam(event){
                 'Ular Kegelian'
             ];
             const random = Math.floor(Math.random() * khodam.length);
-            $('#hasil').html('${nama.toUpperCase()} - Khodam Diri Kamu (${khodam[random]})');
+            $('#hasil').html(`${nama.toUpperCase()} - Khodam Diri Kamu (${khodam[random]})`);
             $('#search').val('');
         }
         else {
-            $('#hasil').html('${nama.toUpperCase()} - KOSONG');
+            $('#hasil').html(`${nama.toUpperCase()} - KOSONG`);
             $('#search').val('');
         }
     }
@@ -39,4 +40,4 @@ function cekKhodam(event){
 
 $(document).ready(function(){
     $('#btn-search').click(cekKhodam);
-});
+})

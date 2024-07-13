@@ -38,10 +38,6 @@ body::before{
     text-align: center;
 }
 
-/* .header p{
-    margin: 0;
-} */
-
 .header p.by-ryan{
     margin-top: 0;
 }
@@ -54,7 +50,7 @@ body::before{
 
 #search{
     width: 100%;
-    height: 50%;
+    height: 50px;
     border: none;
     border-radius: 30px;
     font-size: 1.2rem;
