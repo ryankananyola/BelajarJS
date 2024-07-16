@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Url Shortener By Ryan K Ny</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <i class="bx bx-link-alt"></i>
+        <h1>Url Shortener</h1>
+        <label for="originalUrl">Masukkan Link yang ingin diperpendek :</label>
+        <input type="text" id="originalUrl" placeholder="https://contoh.com">
+        <div class="buttons">
+            <button id="reload-btn">Reset</button>
+            <button id="short-btn">Perpendek</button>
+        </div>
+        <label for="shortenedUrl">Hasil URL :</label>
+        <textarea id="shortenedUrl" rows="3" readonly></textarea>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
